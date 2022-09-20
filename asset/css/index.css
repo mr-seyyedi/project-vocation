@@ -1,0 +1,141 @@
+header{
+    position: sticky;
+     top: 0px;
+     z-index: 1030;
+     background-color: white;
+	width: auto;
+}
+.title h2{
+    text-shadow: 4px 4px 4px gray;
+    text-align: center;
+    font-size: 50px;
+
+}
+.icon00{
+    width: 50px;
+    height: 50px;
+}
+.icoon{
+    width: 50px;
+    height: 50px;
+}
+.content2{
+	height: 370px;
+}
+.content2 h1{
+	text-align: center;
+}
+.content3 img{
+	width: 200px;
+	margin: auto;
+}
+.content3 div{
+	margin: auto;
+}
+.content2 div{
+    color: white;
+    width: 217px;
+    height: 130px;
+    background-color: black;
+    border-radius: 20px;
+    float: right;
+    margin:20px;
+}
+.content2 div p{
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.plist{
+	list-style: none;
+	color: white;
+}
+.plist hr{
+	background: white;
+}
+.plist li{
+	float: right;
+	padding: 0px 220px;
+}
+.plist li a{
+	text-decoration: none;
+	padding: 10px;
+}
+.cart{
+	height: 300px;
+	list-style: none;
+	color: white;
+}
+.cart hr{
+	background: white;
+}
+.cart li{
+	float: right;
+	padding: 0px 130px;
+}
+.cart li a{
+	text-decoration: none;
+	padding: 10px;
+}
+/*footer*/
+.flist{
+	margin: 0px 20px;
+}
+.flist li {
+	padding: 20px 95px;
+	display: block;
+	float: right;
+}
+.flist li a{
+	text-decoration: none;
+	color: white;
+}
+
+.flist hr{
+		background-color:black;
+}
+.flist img{
+	padding: 7px;
+}
+.footer{
+	text-align: right;
+	background:#343a40;
+	padding: 10px;
+	height: 280px;
+}
