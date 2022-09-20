@@ -18,7 +18,7 @@ if (isset($_POST['login'])){
     $login=$stmt->rowCount();
     if($login > 0){
       $_SESSION['user']=$username;
-      header("Location:vacation.php");
+      header("Location:vocation.php");
     }
   }
 }
@@ -35,11 +35,12 @@ if (isset($_POST['login'])){
 <body style = "
     text-align: center;
     margin: 200px 0px 0px 640px;
+    background-color:#00ff60;
     ">
-       
-    <div class = "row">
+<div class="container-fluid">
+  <div class = "row">
     <form method="POST">
-    <h3>ورود به سامانه </h3><hr>
+      <h3>ورود به سامانه </h3><hr>
         <div class = "form-group">
           <label for = "exampleInputEmail1">نام کاربری</label>
           <input type = "text" class = "form-control" placeholder = "Enter username" name = "username">
@@ -48,10 +49,10 @@ if (isset($_POST['login'])){
           <label for = "exampleInputPassword1">پسورد</label>
           <input type = "password" class = "form-control" placeholder = "Enter password" name = "pass">
         </div>
-  <button type = "submit" class = "btn btn-primary col-sm-12" name = "login">ورود</button>
-</form>
-    </div>
-
+      <button type = "submit" class = "btn btn-outline-secondary col-sm-12" name = "login">ورود</button>
+    </form>
+  </div>
+</div>
 
 <script src = "asset/js/jquery.min.js"></script>
 <script src = "asset/js/bootstrap.min.js"></script>

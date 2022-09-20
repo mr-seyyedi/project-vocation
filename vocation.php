@@ -1,7 +1,7 @@
 <?php 
-require_once "db.php";
-if (isset ($_POST['vocation'])){ header("Location:vacation.php"); }
-if (isset ($_POST['logaut'])){ header("Location:logaut.php"); }
+    require_once "db.php";
+    if (isset ($_POST['vocation'])){ header("Location:vacation.php"); }
+    if (isset ($_POST['logaut'])){ header("Location:logaut.php"); }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ if (isset ($_POST['logaut'])){ header("Location:logaut.php"); }
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <title>index</title>
 </head>
-<body>
+<body style="text-align: center;">
 <?php
     if (isset ($_SESSION['user'])){
         $username=$_SESSION['user'];
@@ -20,10 +20,11 @@ if (isset ($_POST['logaut'])){ header("Location:logaut.php"); }
         $stmt->bindvalue("username","$username");
         $stmt->execute();
         foreach ($stmt as $row){
+            $id=$row['id'];
             $name=$row['name'];
             $family=$row['family'];
 ?>
-    <div style='
+<div style='
     background-color:#00ff60;
     text-align:center;
     padding:10px;
@@ -35,8 +36,13 @@ if (isset ($_POST['logaut'])){ header("Location:logaut.php"); }
     <button type="submit" class="btn btn-secondary" name="vocation">مرخصی</button>
     </form>
     <hr>
-    </div>
+</div>
 <?php } } ?>
+
+<h2>لیست مرخصی ها</h2>
+<hr>
+<h2>ثبت مرخصی ها</h2>
+
 
 <script src="asset/js/jquery.min.js"></script>
 <script src="asset/js/bootstrap.min.js"></script>
